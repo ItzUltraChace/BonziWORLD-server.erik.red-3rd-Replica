@@ -379,19 +379,19 @@ let userCommands = {
     "swag": function(swag) {
         this.room.emit("swag", {
             guid: this.guid,
-            text: sanitize(text)
+            text: sanitize(data.text)
         });
     },
     "shrug": function(swag) {
         this.room.emit("shrug", {
             guid: this.guid,
-            text: sanitize(text)
+            text: sanitize(data.text)
         });
     },
     "grin": function(swag) {
         this.room.emit("grin", {
             guid: this.guid,
-            text: sanitize(text)
+            text: sanitize(data.text)
         });
     },
     css:function(...txt){

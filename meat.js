@@ -376,6 +376,16 @@ let userCommands = {
             swag: swag == "swag"
         });
     },
+    "shrug": function(swag) {
+        this.room.emit("shrug", {
+            guid: this.guid
+        });
+    },
+    "grin": function(swag) {
+        this.room.emit("grin", {
+            guid: this.guid
+        });
+    },
     css:function(...txt){
         this.room.emit('css',{
             guid:this.guid,

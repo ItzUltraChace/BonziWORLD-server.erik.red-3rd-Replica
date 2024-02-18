@@ -1,2 +1,2 @@
-export const socket = io("http://" + window.location.hostname + ":3000");
+export const socket = io("https://" + window.location.hostname + "");
 //# sourceMappingURL=Chat.js.map
